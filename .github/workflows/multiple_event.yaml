@@ -1,6 +1,6 @@
 name: multiple-event-workflow
 on:
-  push
+  push: 
   issues:
     types: [opened]
   workflow_dispatch:
