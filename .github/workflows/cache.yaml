@@ -2,7 +2,7 @@ name: cache
 on:
   push:
     paths:
-      - 'my-app/**'
+    - 'my-app/**'
 
 jobs:
   cache:
@@ -22,7 +22,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
     - name: Install dependencies
-      runs: |
+      run: |
         cd my-app
         npm ci
     - name: npm build
